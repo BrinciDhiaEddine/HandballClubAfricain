@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.handball.handballdesktopapp.newPlayerController">
    <children>
-      <TextField layoutX="190.0" layoutY="134.0" prefHeight="38.0" prefWidth="211.0" promptText="Nom du joueur" />
+      <TextField fx:id="nomJoueur" layoutX="190.0" layoutY="134.0" prefHeight="38.0" prefWidth="211.0" promptText="Nom du joueur" />
       <Button fx:id="playButton" layoutX="190.0" layoutY="208.0" mnemonicParsing="false" onAction="#switchToSessionScreen" prefHeight="38.0" prefWidth="211.0" text="Jouer" />
       <Button fx:id="backButton" layoutX="28.0" layoutY="33.0" mnemonicParsing="false" onAction="#switchSessionSettingsPage" text="Page précédente">
          <font>

@@ -20,5 +20,8 @@
             <Font size="11.0" />
          </font>
       </Button>
+      <Button fx:id="startButton" layoutX="244.0" layoutY="278.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="97.0" text="start" />
+      <Button fx:id="connectButton" layoutX="96.0" layoutY="278.0" mnemonicParsing="false" onAction="#connecter" prefHeight="26.0" prefWidth="97.0" text="connecter" />
+      <Button fx:id="resultButton" onAction="#switchToResultsPage" layoutX="388.0" layoutY="278.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Résultats" />
    </children>
 </AnchorPane>

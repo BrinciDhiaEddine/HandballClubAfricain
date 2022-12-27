@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class SceneController implements Initializable {
@@ -22,6 +23,8 @@ public class SceneController implements Initializable {
     public Button newSessionButton = new Button() ;
     public Button statisticsButton = new Button() ;
     public Button infoButton = new Button() ;
+
+    public Text title = new Text();
 
 
     public void switchToScene1(ActionEvent event) throws IOException {
@@ -40,11 +43,20 @@ public class SceneController implements Initializable {
         stage.show();
     }
 
+    public void switchToSceneStats(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("statistiques.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         newSessionButton.setStyle("-fx-background-color: #007bff;-fx-text-base-color:white; ");
         statisticsButton.setStyle("-fx-background-color: #007bff;-fx-text-base-color:white; ");
         infoButton.setStyle("-fx-background-color: #007bff;-fx-text-base-color:white; ");
-
+        title.setStyle("-fx-text-base-color:#007bff;");
     }
+
+
 }
